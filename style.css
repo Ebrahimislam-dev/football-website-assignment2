@@ -91,6 +91,8 @@ header:hover{
     width: 100%;
 }
 /*---------------------------------------------- main section-------------------------------------------- */
+
+/*---------------------------------- player section--------------------------------- */
 .players-list{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
@@ -199,8 +201,58 @@ header:hover{
     opacity: 0.8;
   }
 /*------------------------------------------gallery section------------------------------------------ */
-
-
+.gallery{
+    max-width: 1440px;
+    margin: auto;
+    border: #fff solid 3px;
+    background: #fff;
+  }
+  .gallery-title{
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+.gallery-title span{
+	color: rgb(240, 8, 54);
+}
+.banner-img{
+    width: 80%;
+    height: 80%;
+    margin-left: 180px;
+    margin-right: 210px;
+}
+  .banner-img img{
+	  width: 100%;
+	  height: 100%;
+	  /* background: center; */
+  }
+ 
+  
+  .gallery .motm-img{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    margin-left: 250px;
+    margin-right: 210px; 
+    margin-top: 70px;
+	
+  }
+  
+  .motm-img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+  }
+  .motm-img img:hover{
+      transform: scale(1.3);
+      transition: 1s;
+  }
 /* -----------------------------------------------footer section------------------------------------- */
 .footer-items{
     display: flex;
@@ -210,7 +262,7 @@ header:hover{
     padding: 0px;
     width: 483.87px;
     height: 213px;
-    margin: 1780px 480px 40px 475px;
+    margin: 70px 480px 40px 475px;
     
 }
 .footer-items img{
@@ -230,4 +282,103 @@ header:hover{
 }
 .footer-items p{
     font-size: 18px;
+}
+/* -----------------media Query--------------------*/
+/*--------------- for mobile screen--------------- */
+@media only screen and (max-width:668px)
+{
+    /* header section */
+    header{
+        width: 668px;
+        height: 695px;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        
+    }
+    .header-title{
+        display: flex;
+        flex-direction: column;
+        
+        margin-left: 16px;
+        margin-top: 112px;
+        margin-bottom: 2px;
+    
+    }
+    .title{
+        width: 278px;
+        height: 138px;
+        margin-right: 60px;
+        margin-left: 23px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    header .button{
+        margin-left: 23px;
+    }
+    .header-img{
+        width: 329px;
+        height: 259px;
+        margin: 50px 15px 38px 15px;
+    }
+    /* player section */
+    .players-list{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-row-gap: 24px;
+        margin-left: 180px;
+        margin-right: 210px;
+        
+    }
+    .players{
+        width: 330px;
+        height: 474px;
+        margin: 15px;
+        padding:10px  0;
+    }
+    /* login section */
+    .login-form{
+         margin-top: 6150px;
+         margin-left: 60px;
+         margin-right: 60px
+    }
+    /* gallery section */
+    .gallery-title{
+        font-size: 2rem;
+    }
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .gallery .motm-img{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    .motm-img img:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    /* --------footer --------- */
+    .footer-items{
+        justify-content: space-between;
+        align-items: center;
+        width: 484px;
+        height: 213px;
+        margin: 43px 0px 187px 80px;
+    }
+    .footer-items img{
+        width: 276px;
+        height: 110px;
+    }
+    .footer-items p{
+      
+        text-align: left;
+        font-size: 18px;
+        
+    }
 }
