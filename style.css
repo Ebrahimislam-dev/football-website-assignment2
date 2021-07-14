@@ -338,6 +338,7 @@ header:hover{
     }
     /* login section */
     .login-form{
+        width: 100%;
          margin-top: 6150px;
          margin-left: 60px;
          margin-right: 60px
@@ -345,6 +346,7 @@ header:hover{
     /* gallery section */
     .gallery-title{
         font-size: 2rem;
+        width: 100%;
     }
     .banner-img{
         width: 100%;
@@ -382,3 +384,53 @@ header:hover{
         
     }
 }
+/* -----------------media Query--------------------*/
+/*--------------- for TAB screen--------------- */
+
+@media only screen 
+  and (min-device-width: 669px) 
+  and (max-device-width: 992px) {
+      /* header section */
+    .header{
+        /* width: 992px; */
+        width: 100%;
+    }
+    /* player section */
+    .players-list{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 250px;
+        margin-right: 250px;
+        grid-column-gap: 120px;
+    }
+    /* login section */
+    .login-form{
+        margin-top: 2900px;
+        margin-left: 250px;
+        margin-right: -20%;
+    }
+    /* gallery section */
+    .gallery-title{
+        margin-left: 310px;
+    }
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        margin-left: 220px;
+        margin-right: 210px;
+    }
+    .gallery .motm-img{
+         grid-template-columns: repeat(2, 1fr);
+         width: 100%;
+    }
+   /* footer */
+   .footer-items p 
+   {
+    font-size: 28px;
+    }
+    .footer-items .social-icons {
+        width: 250px;
+    }
+    .social-icons .fab{
+        font-size: 28px;
+    }
+  }
