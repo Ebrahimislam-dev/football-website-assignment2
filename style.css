@@ -133,3 +133,101 @@ header:hover{
 
 
 }
+
+/*------------------------------------------- login form section------------------------------------- */
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    margin-top: 1850px;
+    margin-left: 180px;
+    margin-right: 3%;
+   
+}
+.bg-img {
+    background-image: url("images/login.png");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  }
+  
+  
+  .container {
+    position: absolute;
+    right: 0; 
+    margin:40px 10px;
+    max-width: 400px;
+    height: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  .container h1{
+      margin-bottom: 20px;
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+   
+  }
+  
+  
+  .btn {
+    background-color: #E02C6D; 
+    color: white;
+    margin-top: 20px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    opacity: 1;
+  }
+  
+.btn:hover {
+    opacity: 0.8;
+  }
+/*------------------------------------------gallery section------------------------------------------ */
+
+
+/* -----------------------------------------------footer section------------------------------------- */
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 483.87px;
+    height: 213px;
+    margin: 1780px 480px 40px 475px;
+    
+}
+.footer-items img{
+    width: 483.87px;
+    height: 110px;
+}
+.footer-items .social-icons{
+    width: 170px;
+    height: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px  156px;
+}
+.social-icons .fab{
+    color: #969BAB;
+}
+.footer-items p{
+    font-size: 18px;
+}
